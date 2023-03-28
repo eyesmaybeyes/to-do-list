@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Планировщик задач</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1 class="title">Все задачи</h1>
+            <div class="task">
+                <input
+                    type="text"
+                    required
+                    id="newTask"
+                    placeholder="Добавить задачу"
+                />
+                <button type="button" class="task__btn" id="addBtn">
+                    Добавить
+                </button>
+            </div>
+            <div class="todo-list todo" id="tasks">
+                <p class="notasks">Нет задач</p>
+            </div>
+            <button class="todo-list__btn" id="deleteBtn" disabled>
+                Очистить список
+            </button>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
