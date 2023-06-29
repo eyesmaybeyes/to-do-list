@@ -95,7 +95,11 @@ body {
 .todo-task__text {
     width: fit-content;
     font-size: 20px;
+    max-width: 96%;
+    word-break: break-all;
+    margin: 1%;
 }
+
 .todo-task__del {
     margin-left: auto;
     margin-right: 0;
